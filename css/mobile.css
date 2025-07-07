@@ -53,6 +53,10 @@ nav ul{
 
 }
 
+.loja, .produtos, .suporte{
+    font-size: .8em;
+}
+
 .loja a, .produtos a, .suporte a, .search a, .bag a, .menu-icone a{
     color: #ffffff;
     font-size: 1.3em;
