@@ -4,12 +4,16 @@
         display: none;
     }
 
-    .footer-form  {
-        align-items: center;
+    .mais{
+        font-size: 1.5em;
     }
 
-    form input{
-        flex-grow: 0;
+    .autor{
+        font-size: 1.5em;
     }
-}
+
+    .footer-form label {
+        font-size: 1.2em;
+    }
+}   
 
