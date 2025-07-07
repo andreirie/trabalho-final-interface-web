@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #000;
+    color: #ffffff;
+}
+
+header{
+    position: relative;
+    background-color: #000000d0;
+    backdrop-filter: blur(20px);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    color: #ffffff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.logo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(249deg) brightness(106%) contrast(102%);
+    width: 100px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(40%) sepia(78%) saturate(7094%) hue-rotate(344deg) brightness(124%) contrast(133%);
+}
+
+@media screen and (max-width: 767px){
+    
+    .loja, .produtos, .suporte{
+        display: none;
+    }
+
+}
+
+.loja a, .produtos a, .suporte a, .search a, .bag a, .menu-icone a{
+    color: #ffffff;
+    font-size: 1.3em;
+    transition: .3s ease;
+}
+
+.loja a:hover, .produtos a:hover, .suporte a:hover, .search a:hover, .bag a:hover, .menu-icone a:hover{
+    color: #f51928;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    height: 100%;
+    width: 250px;
+    background-color: #000000d0;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+    transition: right 0.4s ease;
+    z-index: 10;
+}
+
+.side-menu a {
+  color: #ffffff;
+  margin: 1em 0;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f51928;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.side-menu .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: transform 0.3s;
+}
+
+.close-btn:hover {
+    color: #f51928;
+    transform: scale(1.1);
+}
+
+.video-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mais {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000d0;
+    backdrop-filter: blur(20px);
+    padding: 10px 20px;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.mais:hover {
+    transform: translateX(-50%) scale(1.1);
+    background-color: #f51928;
+}
+
+.progress-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 10px;
+    background-color: #00000042;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: width 0.2s linear;
+}
+
+footer {
+    padding: 1em;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.footer-form label {
+    margin-left: 12px;
+    margin-bottom: 32px;
+}
+
+.footer-form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#email{
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    padding: 8px 12px;
+    color: #ffffff;
+    flex-grow: 1    ;
+}
+
+#preVendaForm button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+#preVendaForm button:hover {
+    transform: scale(1.1);
+    background-color: #f51928;
+}
+
+.form-message {
+    font-size: .9em;
+    transition: color 0.3s ease;
+}
+
+.form-message.error {
+    color: #f51928;
+}
+
+.form-message.success {
+    color: #00cc66;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.sobre a, .home a, .politica a, .termos a{
+    color: #ffffff;
+    font-size: .6em;
+    transition: .3s ease;
+}
+
+.sobre a:hover, .home a:hover, .politica a:hover, .termos a:hover{
+    color: #f51928;
+}
+

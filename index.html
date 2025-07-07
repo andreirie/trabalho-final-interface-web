@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho Final</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css    ">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-        <video src="video.webm" autoplay loop></video>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="logo.svg" alt="">
-                </div>
-                <ul>
-                    <div class="search">
+    <header>
+        <nav>
+            <div class="logo">
+                   <img src="logo.svg" alt="">
+            </div>
+            <div class="loja"><a href="#">Loja</a></div>
+            <div class="produtos"><a href="#">Produtos</a></div>
+            <div class="suporte"><a href="#">Suporte</a></div>
+               <ul>
+                    <li class="search">
                         <a href="#"><i class='bx bx-search'></i></a> 
-                    </div>
-                    <div class="bag">
+                    </li>
+                    <li class="bag">
                         <a href="#"><i class='bx bx-shopping-bag'></i></a>
-                    </div>
-                    <div class="menu">
+                    </li>
+                    <li class="menu-icone">
                         <a href="#"><i id="menu-icon" class='bx bx-menu'></i></a> 
-                    </div>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        <footer>
-            
-        </footer>
-    </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <video id="video" src="video.webm" autoplay loop muted playsinline></video>
+            <div class="mais">Saiba mais</div>
+            <div class="side-menu" id="sideMenu">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <a href="#">Loja</a>
+                <a href="#">Produtos</a>
+                <a href="#">Suporte</a>
+                </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-form">
+            <label for="" class="">Inscreva-se para receber novidades da pré-venda</label> 
+            <form id="preVendaForm">
+                <input type="email" id="email" placeholder="Insira seu e-mail" required>
+                <button type="submit">Inscrever-se</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+        <div class="footer-links">
+            <div class="sobre"><a href="#">Sobre nós</a></div>
+            <div class="home"><a href="#">Home</a></div>
+            <div class="politica"><a href="#">Política de Privacidade</a></div>
+            <div class="termos"><a href="#">Termos de Serviço</a></div>
+    </footer>
+    
+<script src="js/script.js"></script>
 </body>
 </html>
